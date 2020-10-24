@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: gray;
+        }
+
+        nav {
+            width: 100%;
+            background: black;
+            overflow: auto;
+        }
+
+        ul {
+            padding: 0%;
+            margin: 0 0 0 650px;
+            list-style: none;
+        }
+
+        li {
+            float: left;
+        }
+
+        .logo img {
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        nav a {
+            width: 100px;
+            display: block;
+            padding: 20px 15px;
+            text-decoration: none;
+            font-family: arial;
+            color: #f2f2f2;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background: rgb(221, 114, 7);
+            transition: 0, 5s;
+            text-transform: uppercase;
+        }
+
+        .jumbotron {
+            background-image: url(slider1.jpg);
+            background-size: cover;
+            height: 640px;
+            margin-top: -150px;
+        }
+
+
+        .jumbotron .display-4 {
+            color: #f2f2f2;
+            text-align: center;
+            margin-top: 150px;
+            font-weight: 200;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0, 7);
+        }
+
+        .jumbotron .display-4 span {
+            font-weight: 500;
+        }
+
+        .workingspace {
+            margin-top: 120px;
+        }
+
+        .workingspace h3 {
+            font-size: 20px;
+            font-weight: 200;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+
+        #rig {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            font-size: 0;
+            list-style: none;
+            background-color: none;
+        }
+
+        #rig li {
+            display: inline-block;
+            *display: inline;
+            width: 25%;
+            vertical-align: middle;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .rig-cell {
+            margin: 12px;
+            border-radius: 5px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+            padding: 16px;
+            border: none;
+            color: rgb(85, 85, 85);
+            background-color: rgb(221, 114, 7);
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rig-cell h3 {
+            font-size: 18px;
+            font-family: 'Oswald', sans-serif;
+            font-weight: normal;
+        }
+
+        .rig-img1 {
+            display: block;
+            border: none;
+            width: 100%;
+            height: 0;
+            padding-top: 83.461538%;
+            background-size: cover;
+            background-color: white;
+            background-image: url("slider2.jpg");
+            background-repeat: no-repeat;
+        }
+
+        .rig-img2 {
+            display: block;
+            border: none;
+            width: 100%;
+            height: 0;
+            padding-top: 83.461538%;
+            background-size: cover;
+            background-color: white;
+            background-image: url("slider3.jpg");
+            background-repeat: no-repeat;
+        }
+
+        .rig-img3 {
+            display: block;
+            border: none;
+            width: 100%;
+            height: 0;
+            padding-top: 83.461538%;
+            background-size: cover;
+            background-color: white;
+            background-image: url("slider1.jpg");
+            background-repeat: no-repeat;
+        }
+
+        .rig-img4 {
+            display: block;
+            border: none;
+            width: 100%;
+            height: 0;
+            padding-top: 83.461538%;
+            background-size: cover;
+            background-color: white;
+            background-image: url("slider4.jpg");
+            background-repeat: no-repeat;
+        }
+
+        .rig-overlay {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background: rgb(221, 114, 7);
+            background-size: 50px 50px;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            transition: all 0.3s;
+        }
+
+        #rig li:hover .rig-overlay {
+            opacity: 0.5;
+        }
+
+        @media(max-width: 9000px) {
+            #rig li {
+                width: 25%;
+            }
+        }
+
+        @media(max-width: 800px) {
+            #rig li {
+                width: 33.33%;
+            }
+        }
+
+        @media(max-width: 500px) {
+            #rig li {
+                width: 50%;
+            }
+        }
+
+        @media(max-width: 350px) {
+            #rig li {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <body id="home">
+        <!-- navbar -->
+        <div class="logo"><a href="#home"><img src="white.png" alt="" width="85"></a> </div>
+        <nav>
+            <ul>
+                <li><a href="#Tentangkami">Tentang Kami</a></li>
+                <li><a href="#Tarif">Tarif</a></li>
+                <li><a href="#Cabang">Cabang</a></li>
+                <li><a href="#Destinasi Pilihan">Destinasi</a></li>
+            </ul>
+        </nav>
+
+
+
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div>
+                <h1 class="display-4">
+            </div>
+        </div>
+        <!-- Akhir Jumbotron -->
+
+        <!-- Logo -->
+        <div class="row workingspace">
+            <div align="center">
+                <img src="logo1.png">
+            </div>
+            <div align="center">
+                <h3>Make Your Travel Moment More Memorable</h3>
+                <p>Membuat Momen Perjalanan Anda Lebih Berkesan</p>
+            </div>
+        </div>
+        <!-- logo -->
+
+        <!-- Tentangkami -->
+        <section id="Tentangkami">
+            <h3 align="center">Tentang Kami</h3>
+            <div class="col m6 light">
+                <p align="center">Dendi Travel adalah sebuah jasa transportasi yang melayani perjalanan dengan route
+                    Seluruh indonesia Trans Travel sudah berjalan selama kurang lebih 2 tahun dan telah melakukan
+                    ribuan perjalanan /travelBogor - Bandung dan telah memberi kenyamanan kepada para penumpang dengan
+                    armada terbaru
+                    yang layak jalan dan sesuai dengan standar operasional.</p>
+            </div>
+        </section>
+        <!--  Akhir Tentangkami -->
+
+        <!-- Tarif -->
+        <section id="Tarif">
+            <h3 align="center">Tarif</h3>
+            <div align="center">
+                <tr>
+
+                    <th width="20%">
+                    <td rowspan="2">
+
+                        <table border="1" width="70%">
+                            <tr>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Rute
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Harga
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Waktu
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Fasilitas
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                            </tr>
+                            <tr>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Jabodetabek - Sulawesi
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            1.500.000
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            2j, 55mnt
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Ac, TV LED, video, full musik, reclining seat, air mineral, bantal tidur.
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Jabodetabek - Barat
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            500.000
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            1j
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Ac, TV LED, video, full musik, reclining seat, air mineral, bantal tidur.
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Jabodetabek - Jawa Timur
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            700.000
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            1j,30mnt
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Ac, TV LED, video, full musik, reclining seat, air mineral, bantal tidur.
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Jabodetabek - Kalimantan
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            1.000.000
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            1j,55mnt
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Ac, TV LED, video, full musik, reclining seat, air mineral, bantal tidur.
+
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Jabodetabek - Jawa Tengah
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            800.000
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            1j,10mnt
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Ac, TV LED, video, full musik, reclining seat, air mineral, bantal tidur.
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                            </tr>
+
+                        </table>
+
+                    </td>
+
+                </tr>
+
+                </table>
+            </div>
+        </section>
+
+        <!--  Cabang -->
+        <section id="Cabang">
+            <h3 align="center">Cabang</h3>
+            <div align="center">
+                <tr>
+
+                    <th width="20%">
+                    <td rowspan="2">
+
+                        <table border="1" width="70%">
+                            <tr>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Cabang
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Lokasi
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Bogor Barat
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Kp. Sadeng Pasar Kec. Leuwi sadeng Kab. Bogor
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Bogor Kota
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Kp. Sumur wangi Kec. Tanah Sareal Kota Bogor
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Bogor Tengah
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+
+                                <td>
+
+                                    <center>
+                                        <h4>
+
+                                            Jl. Sempur Kec. Sempur Kota Bogor
+
+                                        </h4>
+                                    </center>
+
+                                </td>
+                            </tr>
+
+
+                        </table>
+            </div>
+        </section>
+
+
+        <!-- Akhir Cabang -->
+
+
+        <!--  Destinasi Pilihan -->
+        <section id="Destinasi Pilihan">
+            <hr>
+            <h3 align="center">Destinasi Pilihan</h3>
+            <div>
+                <ul id="rig">
+                    <li>
+                        <a class="rig-cell" href="#">
+                            <span class="rig-img1"></span>
+                            <h3>Sulawesi</h3>
+                            <span class="rig-overlay"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rig-cell" href="#">
+                            <span class="rig-img2"></span>
+                            <h3>Jawa barat</h3>
+                            <span class="rig-overlay"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rig-cell" href="#">
+                            <span class="rig-img3"></span>
+                            <h3>Jawa Timur</h3>
+                            <span class="rig-overlay"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rig-cell" href="#">
+                            <span class="rig-img4"></span>
+                            <h3>Kalimantan</h3>
+                            <span class="rig-overlay"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--  Akhir Destinasi Pilihan -->
+
+
+
+
+    </body>
+
+</html>
